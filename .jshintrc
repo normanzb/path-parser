@@ -2,6 +2,7 @@
     "validthis": true,
     "eqnull": true,
     "strict": true,
+    "globalstrict": false,
     "quotmark": true,
     "undef": true,
     "unused": true,

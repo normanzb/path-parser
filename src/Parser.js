@@ -37,8 +37,16 @@ define(function () {
         return this._base;
     };
 
+    p.ext = function (value) {
+        if (value != null) {
+            value += '';
+            this._ext = value;
+        }
+        return this._ext;
+    };
+
     p.file = function() {
-        return this._base + (this._ext != ''?'.' + this._ext: '');
+        return this._base + (this._ext !== ''?'.' + this._ext: '');
     };
 
     p.concat = function(path) {
